@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<!--    タイトル「四則計算アプリ」の文字-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="16dp"
+        android:text="四則計算アプリ" />
+
+<!--    「数値を入力」欄-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="26dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:textSize="36sp"
+            android:inputType="number"
+            android:digits="0123456789-."
+            android:id="@+id/edit1"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/kigou"/>
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:textSize="36sp"
+            android:inputType="number"
+            android:digits="0123456789-."
+            android:id="@+id/edit2"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="①数値を入力"
+            android:paddingTop="12dp"
+            android:textSize="24sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+<!--    「計算方法を選択」欄-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="26dp"
+        android:background="@color/cardview_dark_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginRight="24dp"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:id="@+id/tasu"
+                android:src="@drawable/tasu" />
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginRight="24dp"
+                android:id="@+id/hiku"
+                android:src="@drawable/hiku" />
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginRight="24dp"
+                android:id="@+id/kakeru"
+                android:src="@drawable/kakeru" />
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:id="@+id/waru"
+                android:src="@drawable/waru" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="②計算方法を選択"
+            android:paddingTop="12dp"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+<!--    計算ボタン-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="計算する!"
+        android:textSize="24sp"
+        android:id="@+id/button1"/>
+
+</LinearLayout>
